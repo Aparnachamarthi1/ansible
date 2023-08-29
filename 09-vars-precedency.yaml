@@ -10,9 +10,8 @@
     private: false
   tasks: 
   - name: variable at task level
-    vars: 
-      NAME: aparna-task
     ansible.builtin.debug:
       msg: "trainer name is: {{NAME}}" 
 
- # 1. command line variables.        
+ # 1. command line variables.
+ # 2. task level        
