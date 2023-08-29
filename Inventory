@@ -4,6 +4,7 @@ roboshop-us-dev-db-mongodb-01.chamarthiaparna.online
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmin
 MONGO_DB=catagories
+NAME=aparna-Inventory
 
 [mysql]
 roboshop-us-dev-db-mysql-02.chamarthiaparna.online

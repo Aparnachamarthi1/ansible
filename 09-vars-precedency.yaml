@@ -1,0 +1,17 @@
+- name: testing variable procedure
+  hosts: mongodb
+  vars:
+    NAME: aparna-play
+  vars_files:
+  - variables.yaml
+  vars_prompt:
+ - name: NAME
+    prompt: please enter Trainer Name
+    private: false
+
+  tasks: 
+  - name: variable at task level
+    vars: 
+      NAME: aparna-task
+    ansible.builtin.debug:
+      msg: "trainer name is: {{NAME}}"    
